@@ -6,13 +6,13 @@
 ![Codespaces](https://img.shields.io/badge/GitHub-Codespaces-blue)
 ![Build Status](https://img.shields.io/badge/Status-Completed-success)
 
-🧠 Agentic AI with LangGraph, LangSmith & Human-in-the-Loop
+### 🧠 Agentic AI with LangGraph, LangSmith & Human-in-the-Loop
 
 This project is an end-to-end exploration of agentic AI systems built using LangGraph and LangSmith, focusing not just on functionality, but on observability, debugging, and real-world execution challenges.
 
 The project progresses step by step—from a simple chatbot to a fully traced, Human-in-the-Loop (HITL) agent—while solving practical issues related to environments, tracing, and infrastructure.
 
-🚀 What This Project Demonstrates
+### 🚀 What This Project Demonstrates
 
 This repository shows how to build and debug production-style AI agents, including:
 
@@ -25,7 +25,7 @@ Memory and checkpointing
 Human-in-the-Loop (interrupt & resume)
 
 Full LangSmith tracing (LLM calls, tools, HITL, cost, latency)
-🧩 Project Evolution (Step-by-Step)
+### 🧩 Project Evolution (Step-by-Step)
 
 The project was intentionally built incrementally:
 
@@ -69,7 +69,7 @@ HITL Traced in LangSmith
 
 Full visibility into pauses, resumes, and decisions
 
-🛠️ Technologies Used
+### 🛠️ Technologies Used
 
 Python
 
@@ -84,7 +84,7 @@ OpenAI (ChatOpenAI)
 uv (dependency management)
 
 GitHub Codespaces
-📂 Project Structure
+### 📂 Project Structure
 ```
 ├── basic_chatbot.ipynb
 ├── chatbot_with_tools.ipynb
@@ -96,7 +96,7 @@ GitHub Codespaces
 ├── uv.lock
 └── README.md
 ```
-🧠 Human-in-the-Loop Example
+### 🧠 Human-in-the-Loop Example
 
 The HITL agent pauses execution before performing a sensitive action (e.g., buying stocks):
 
@@ -117,7 +117,7 @@ Human decision
 Resume path
 
 Final outcome
-🔍 LangSmith Tracing & Debugging
+### 🔍 LangSmith Tracing & Debugging
 
 LangSmith was used to trace:
 
@@ -159,8 +159,8 @@ Immediate and reliable LangSmith tracing
 
 This was a major learning outcome of the project.
 
-▶️ How to Run the Project
-Option 1: GitHub Codespaces (Recommended)
+### ▶️ How to Run the Project
+#### Option 1: GitHub Codespaces (Recommended)
 
 Open the repository in GitHub Codespaces
 
@@ -175,7 +175,7 @@ python chatbot_hitl.py
 Follow the approval prompt in the terminal
 
 View traces in LangSmith → Tracing
-Option 2: Local Setup
+#### Option 2: Local Setup
 
 Create a .env file:
 ```
@@ -196,7 +196,7 @@ python chatbot_hitl.py
 ```
 
 Note: Local LangSmith tracing may fail due to network or DNS restrictions.
-📘 Key Learnings
+### 📘 Key Learnings
 
 Agentic AI is not just about prompts or logic
 
@@ -216,7 +216,7 @@ LangSmith makes invisible agent behavior visible
 
 GitHub Codespaces can solve real-world debugging blockers
 
-🚀 Future Improvements
+### 🚀 Future Improvements
 
 UI-based Human-in-the-Loop approval
 
@@ -228,10 +228,11 @@ Automated evaluations in LangSmith
 
 API deployment
 
-📌 Final Note
+### 📌 Final Note
 
 This project was as much about debugging and understanding systems as it was about writing code.
 It represents a practical, real-world approach to building traceable, controllable, and production-ready AI agents.
 Debugging environment and network-level issues
 
 Using GitHub Codespaces to overcome local DNS and tracing problems
+
