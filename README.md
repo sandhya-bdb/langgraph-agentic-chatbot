@@ -8,66 +8,23 @@
 
 ### 🧠 Agentic AI with LangGraph, LangSmith & Human-in-the-Loop
 
-This project is an end-to-end exploration of agentic AI systems built using LangGraph and LangSmith, focusing not just on functionality, but on observability, debugging, and real-world execution challenges.
+- This project is an end-to-end exploration of agentic AI systems built using LangGraph and LangSmith, focusing not just on functionality, but on observability, debugging, and real-world execution challenges.
 
-The project progresses step by step—from a simple chatbot to a fully traced, Human-in-the-Loop (HITL) agent—while solving practical issues related to environments, tracing, and infrastructure.
+- The project progresses step by step—from a simple chatbot to a fully traced, Human-in-the-Loop (HITL) agent—while solving practical issues related to environments, tracing, and infrastructure.
 
 ### 🚀 What This Project Demonstrates
 
 This repository shows how to build and debug production-style AI agents, including:
 
-State-based agent workflows using LangGraph
+1. State-based agent workflows using LangGraph
 
-Tool calling and agent-style decision-making
+2. Tool calling and agent-style decision-making
 
-Memory and checkpointing
+3. Memory and checkpointing
 
-Human-in-the-Loop (interrupt & resume)
+4. Human-in-the-Loop (interrupt & resume)
 
-Full LangSmith tracing (LLM calls, tools, HITL, cost, latency)
-### 🧩 Project Evolution (Step-by-Step)
-
-The project was intentionally built incrementally:
-
-Simple Chatbot
-
-Basic LangGraph setup
-
-State, nodes, and edges
-
-Chatbot with Tools
-
-Tool definitions
-
-Conditional routing based on tool usage
-
-Agent-Style Chatbot
-
-Model decides when to call tools
-
-ToolNode + tools_condition
-
-Chatbot with Memory
-
-Persistent state using checkpoints
-
-Thread-based execution
-
-LangSmith Tracing
-
-Observing graph execution
-
-Tool calls, tokens, latency, and cost
-
-Human-in-the-Loop (HITL)
-
-Interrupting execution for human approval
-
-Resuming execution safely
-
-HITL Traced in LangSmith
-
-Full visibility into pauses, resumes, and decisions
+5. Full LangSmith tracing (LLM calls, tools, HITL, cost, latency)
 
 ### 🛠️ Technologies Used
 
@@ -100,62 +57,63 @@ GitHub Codespaces
 
 The HITL agent pauses execution before performing a sensitive action (e.g., buying stocks):
 
-AI proposes an action
+1. AI proposes an action
 
-Execution interrupts
+2. Execution interrupts
 
-Human approves or declines
+3. Human approves or declines
 
-Execution resumes safely
+4. Execution resumes safely
 
 This workflow is fully traced in LangSmith, including:
 
-Interrupt point
+1. Interrupt point
 
-Human decision
+2. Human decision
 
-Resume path
+3. Resume path
 
-Final outcome
+4. Final outcome
+   
 ### 🔍 LangSmith Tracing & Debugging
 
 LangSmith was used to trace:
 
-LangGraph execution
+1. LangGraph execution
 
-LLM calls
+2. LLM calls
 
-Tool usage
+3. Tool usage
 
-Human interruptions & resumes
+4. Human interruptions & resumes
 
-Token usage
+5. Token usage
 
-Latency and cost
+6. Latency and cost
 
 Key Challenge Faced
 
-LangSmith tracing did not work reliably in the local environment due to:
+1. LangSmith tracing did not work reliably in the local environment due to:
 
-DNS-level network blocking on local Wi-Fi
+2. DNS-level network blocking on local Wi-Fi
 
-Kernel and environment inconsistencies
+3. Kernel and environment inconsistencies
 
-Credential and billing mismatches
+4. Credential and billing mismatches
 
-Solution
+#### Solution
 
 👉 Moved execution to GitHub Codespaces
 
 Codespaces provided:
 
-A clean, reproducible environment
+1. A clean, reproducible environment
 
-No DNS or firewall restrictions
+2. No DNS or firewall restrictions
 
-Correct credential loading
+3. Correct credential loading
 
-Immediate and reliable LangSmith tracing
+4. Immediate and reliable LangSmith tracing
 
 This was a major learning outcome of the project.
 
@@ -235,4 +193,5 @@ It represents a practical, real-world approach to building traceable, controllab
 Debugging environment and network-level issues
 
 Using GitHub Codespaces to overcome local DNS and tracing problems
+
 
