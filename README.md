@@ -65,8 +65,7 @@ The project was intentionally built incrementally:
 ├── chatbot_agent_mocktool.ipynb      # Agent with mock stock tool
 ├── chatbot_agent_tool_real_api.ipynb # Agent with real stock API
 ├── chatbot_langsmith.ipynb           # LangSmith tracing experiments
-├── chatbot_with_memory.ipynb         # Memory-enabled chatbot
-├── app.py                            # Optional script-based entry
+├── chatbot_with_memory.ipynb         # Memory-enabled chatbot                          
 ├── pyproject.toml                    # uv dependency config
 ├── uv.lock                           # Locked dependencies
 ├── README.md
@@ -206,6 +205,7 @@ Using GitHub Codespaces to overcome local DNS and tracing problems
 
 Sandhya Banti Dutta Borah
 Built as a hands-on LangGraph + Agent Systems learning project.
+
 
 
 
