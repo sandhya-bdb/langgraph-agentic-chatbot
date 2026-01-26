@@ -9,8 +9,16 @@
 ### 🧠 Agentic AI with LangGraph, LangSmith & Human-in-the-Loop
 
 - This project is an end-to-end exploration of agentic AI systems built using LangGraph and LangSmith, focusing not just on functionality, but on observability, debugging, and real-world execution challenges.
-
 - The project progresses step by step—from a simple chatbot to a fully traced, Human-in-the-Loop (HITL) agent—while solving practical issues related to environments, tracing, and infrastructure.
+- This repository contains a progressively built AI chatbot system using LangGraph, LangChain, and OpenAI, developed and tested inside GitHub Codespaces using uv for dependency management.
+
+The project demonstrates:
+
+- Tool-augmented agents (mock & real APIs)
+- Pydantic-based state management
+- LangSmith tracing for observability
+- Gradio UI for interactive chatting
+- Clean Git & Codespaces workflow
 
 ### 🚀 What This Project Demonstrates
 
@@ -51,15 +59,19 @@ The project was intentionally built incrementally:
   
 ### 📂 Project Structure
 ```
-├── basic_chatbot.ipynb
-├── chatbot_with_tools.ipynb
-├── agent_chatbot.ipynb
-├── chatbot_with_memory.ipynb
-├── langsmith_tracing.ipynb
-├── chatbot_hitl.py
-├── pyproject.toml
-├── uv.lock
-└── README.md
+.
+├── chatbot.ipynb                     # Simple chatbot
+├── chatbot_agent_tool.ipynb          # Original agent with tools
+├── chatbot_agent_mocktool.ipynb      # Agent with mock stock tool
+├── chatbot_agent_tool_real_api.ipynb # Agent with real stock API
+├── chatbot_langsmith.ipynb           # LangSmith tracing experiments
+├── chatbot_with_memory.ipynb         # Memory-enabled chatbot
+├── app.py                            # Optional script-based entry
+├── pyproject.toml                    # uv dependency config
+├── uv.lock                           # Locked dependencies
+├── README.md
+└── .gitignore
+
 ```
 ### 🧠 Human-in-the-Loop Example
 
@@ -190,6 +202,11 @@ It represents a practical, real-world approach to building traceable, controllab
 Debugging environment and network-level issues
 
 Using GitHub Codespaces to overcome local DNS and tracing problems
+### 🧠 Author
+
+Sandhya Banti Dutta Borah
+Built as a hands-on LangGraph + Agent Systems learning project.
+
 
 
 
