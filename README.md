@@ -6,8 +6,7 @@
 ![Codespaces](https://img.shields.io/badge/GitHub-Codespaces-blue)
 ![Build Status](https://img.shields.io/badge/Status-Completed-success)
 
-### Agentic AI with LangGraph, LangSmith & Human-in-the-Loop
-
+## AI chatbot system using LangGraph, LangChain, and OpenAI
 - This project is an end-to-end exploration of agentic AI systems built using LangGraph and LangSmith, focusing not just on functionality, but on observability, debugging, and real-world execution challenges.
 - The project progresses step by step—from a simple chatbot to a fully traced, Human-in-the-Loop (HITL) agent—while solving practical issues related to environments, tracing, and infrastructure.
 - This repository contains a progressively built AI chatbot system using LangGraph, LangChain, and OpenAI, developed and tested inside GitHub Codespaces using uv for dependency management.
@@ -205,6 +204,7 @@ Using GitHub Codespaces to overcome local DNS and tracing problems
 
 Sandhya Banti Dutta Borah
 Built as a hands-on LangGraph + Agent Systems learning project.
+
 
 
 
