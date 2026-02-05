@@ -173,7 +173,7 @@ Agentic AI is not just about prompts or logic
 - LangSmith makes invisible agent behavior visible
 - GitHub Codespaces can solve real-world debugging blockers
 
-##  Persistent Memory with SQLite (LangGraph)
+## Newly added feature- Persistent Memory with SQLite (LangGraph)
 
 The chatbot now supports **persistent conversational memory** using **LangGraph’s SQLite checkpointer**.
 
@@ -204,6 +204,7 @@ Using GitHub Codespaces to overcome local DNS and tracing problems
 
 Sandhya Banti Dutta Borah
 Built as a hands-on LangGraph + Agent Systems learning project.
+
 
 
 
