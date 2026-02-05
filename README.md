@@ -1,4 +1,4 @@
-![Python](https://img.shields.io/badge/Python-3.13-blue)
+![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![LangGraph](https://img.shields.io/badge/LangGraph-Agentic_AI-green)
 ![LangSmith](https://img.shields.io/badge/LangSmith-Tracing-orange)
 ![Human-in-the-Loop](https://img.shields.io/badge/HITL-Enabled-purple)
@@ -27,31 +27,33 @@ This repository shows how to design, debug, and scale **production-style AI agen
 - **LangSmith tracing** for full observability (LLM calls, tools, latency, cost)  
 - **Clean Git + Codespaces workflow**, including environment pinning and reproducibility
 
-
-   
-### 🧩 Project Evolution (Step-by-Step)
+## 🧩 Project Evolution (Step-by-Step)
 
 The project was intentionally built incrementally:
 
-- Simple Chatbot
-- Chatbot with Tools
-- Agent-Style Chatbot
-- Chatbot with Memory
-- LangSmith Tracing
-- Human-in-the-Loop (HITL)
-- HITL Traced in LangSmith
+1. Simple chatbot  
+2. Chatbot with tools  
+3. Agent-style chatbot (tool routing & decision-making)  
+4. Chatbot with **persistent memory (SQLite + thread-based checkpoints)**  
+5. LangSmith tracing & observability  
+6. Human-in-the-Loop (HITL) workflows  
+7. HITL fully traced in LangSmith  
 
+---
 
-### 🛠️ Technologies Used
+## 🛠️ Technologies Used
 
-- Python
-- LangGraph
-- LangChain
-- LangSmith
-- OpenAI (ChatOpenAI)
-- uv (dependency management)
-- GitHub Codespaces
-  
+- Python  
+- LangGraph  
+- LangChain  
+- LangSmith  
+- OpenAI (ChatOpenAI)  
+- SQLite (persistent memory & checkpoints)  
+- uv (dependency & Python version management)  
+- GitHub Codespaces  
+
+   
+
 ### 📂 Project Structure
 ```
 .
@@ -212,6 +214,7 @@ Using GitHub Codespaces to overcome local DNS and tracing problems
 
 Sandhya Banti Dutta Borah
 Built as a hands-on LangGraph + Agent Systems learning project.
+
 
 
 
