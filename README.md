@@ -69,69 +69,59 @@ The project was intentionally built incrementally:
 └── .gitignore
 
 ```
-###  Human-in-the-Loop Example
+## 🧑‍💻 Human-in-the-Loop (HITL) Example
 
-The HITL agent pauses execution before performing a sensitive action (e.g., buying stocks):
+The project includes a **Human-in-the-Loop (HITL) agent workflow**, where execution is intentionally paused before performing a sensitive or irreversible action (e.g., executing a stock trade).
 
-1. AI proposes an action
+**Workflow overview:**
+- The AI proposes an action  
+- Execution is explicitly interrupted  
+- A human reviewer approves or declines the action  
+- Execution safely resumes based on the human decision  
 
-2. Execution interrupts
+This entire workflow is **fully traced in LangSmith**, capturing:
+- The interrupt point  
+- The human decision  
+- The resume path  
+- The final execution outcome  
 
-3. Human approves or declines
+---
 
-4. Execution resumes safely
+## 🔍 LangSmith Tracing & Debugging
 
-This workflow is fully traced in LangSmith, including:
+LangSmith is used extensively to provide deep observability into the agent system, including:
 
-1. Interrupt point
+- LangGraph execution flow  
+- LLM calls  
+- Tool invocations  
+- Human interruptions and resumes  
+- Token usage  
+- Latency and cost analysis  
 
-2. Human decision
+---
 
-3. Resume path
+## ⚠️ Key Challenge Faced
 
-4. Final outcome
-   
-### 🔍 LangSmith Tracing & Debugging
+LangSmith tracing did not work reliably in the local development environment due to:
 
-LangSmith was used to trace:
+- DNS-level network restrictions on local Wi-Fi  
+- Kernel and environment inconsistencies  
+- Credential and billing configuration mismatches  
 
-1. LangGraph execution
+---
 
-2. LLM calls
+## ✅ Solution
 
-3. Tool usage
-
-4. Human interruptions & resumes
-
-5. Token usage
-
-6. Latency and cost
-
-Key Challenge Faced
-
-1. LangSmith tracing did not work reliably in the local environment due to:
-
-2. DNS-level network blocking on local Wi-Fi
-
-3. Kernel and environment inconsistencies
-
-4. Credential and billing mismatches
-
-#### Solution
-
-👉 Moved execution to GitHub Codespaces
+👉 **Execution was migrated to GitHub Codespaces**
 
 Codespaces provided:
+- A clean and reproducible execution environment  
+- No DNS or firewall restrictions  
+- Correct and consistent credential loading  
+- Immediate and reliable LangSmith tracing  
 
-1. A clean, reproducible environment
+This migration proved to be a **major learning outcome**, highlighting the importance of environment reproducibility when building and debugging production-grade AI systems.
 
-2. No DNS or firewall restrictions
-
-3. Correct credential loading
-
-4. Immediate and reliable LangSmith tracing
-
-This was a major learning outcome of the project.
 
 ### ▶️ How to Run the Project
 #### Option 1: GitHub Codespaces (Recommended)
@@ -214,6 +204,7 @@ Using GitHub Codespaces to overcome local DNS and tracing problems
 
 Sandhya Banti Dutta Borah
 Built as a hands-on LangGraph + Agent Systems learning project.
+
 
 
 
