@@ -6,32 +6,28 @@
 ![Codespaces](https://img.shields.io/badge/GitHub-Codespaces-blue)
 ![Build Status](https://img.shields.io/badge/Status-Completed-success)
 
-# AI chatbot system using LangGraph, LangChain, and OpenAI
-- This project is an end-to-end exploration of agentic AI systems built using LangGraph and LangSmith, focusing not just on functionality, but on observability, debugging, and real-world execution challenges.
-- The project progresses step by step—from a simple chatbot to a fully traced, Human-in-the-Loop (HITL) agent—while solving practical issues related to environments, tracing, and infrastructure.
-- This repository contains a progressively built AI chatbot system using LangGraph, LangChain, and OpenAI, developed and tested inside GitHub Codespaces using uv for dependency management.
+# AI Chatbot System using LangGraph, LangChain, and OpenAI
 
-The project demonstrates:
+This project is an end-to-end exploration of **agentic AI systems** built using LangGraph and LangChain, with a strong emphasis on **observability, debugging, and real-world execution challenges** rather than just happy-path demos.
 
-- Tool-augmented agents (mock & real APIs)
-- Pydantic-based state management
-- LangSmith tracing for observability
-- Gradio UI for interactive chatting
-- Clean Git & Codespaces workflow
+The repository progresses step by step — from a simple chatbot to **tool-augmented, memory-enabled, and Human-in-the-Loop (HITL) agents** — while addressing practical issues related to **environment management, tracing, persistence, and infrastructure**.
 
-### 🚀 What This Project Demonstrates
+All experiments were developed and tested locally and in **GitHub Codespaces**, using **uv** for dependency and Python version management.
 
-This repository shows how to build and debug production-style AI agents, including:
+---
 
-1. State-based agent workflows using LangGraph
+## 🚀 What This Project Demonstrates
 
-2. Tool calling and agent-style decision-making
+This repository shows how to design, debug, and scale **production-style AI agents**, including:
 
-3. Memory and checkpointing
+- **State-based agent workflows** using LangGraph  
+- **Tool calling and agent-style decision-making** (mock & real APIs)  
+- **Persistent memory and checkpointing using SQLite** (thread-based conversations)  
+- **Human-in-the-Loop (HITL)** execution with interrupt & resume  
+- **LangSmith tracing** for full observability (LLM calls, tools, latency, cost)  
+- **Clean Git + Codespaces workflow**, including environment pinning and reproducibility
 
-4. Human-in-the-Loop (interrupt & resume)
 
-5. Full LangSmith tracing (LLM calls, tools, HITL, cost, latency)
    
 ### 🧩 Project Evolution (Step-by-Step)
 
@@ -64,7 +60,7 @@ The project was intentionally built incrementally:
 ├── chatbot_agent_mocktool.ipynb      # Agent with mock stock tool
 ├── chatbot_agent_tool_real_api.ipynb # Agent with real stock API
 ├── chatbot_langsmith.ipynb           # LangSmith tracing experiments
-├── chatbot_with_memory.ipynb         # Memory-enabled chatbot                          
+├── chatbot_with_memory.ipynb         # LangGraph chatbot with persistent SQLite memory (thread-based)                         
 ├── pyproject.toml                    # uv dependency config
 ├── uv.lock                           # Locked dependencies
 ├── README.md
@@ -216,6 +212,7 @@ Using GitHub Codespaces to overcome local DNS and tracing problems
 
 Sandhya Banti Dutta Borah
 Built as a hands-on LangGraph + Agent Systems learning project.
+
 
 
 
