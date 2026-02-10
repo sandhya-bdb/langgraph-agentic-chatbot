@@ -1,5 +1,9 @@
 .env
+.venv
+__pycache__/
+.egg-info/
+.ipynb_checkpoints/
+.DS_Store
+
 # SQLite memory files
-memory.db
-memory.db-shm
-memory.db-wal
+data/memory.db*
