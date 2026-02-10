@@ -191,8 +191,6 @@ Note: Local LangSmith tracing may fail due to network or DNS restrictions.
 ## 🚀 Future Improvements
 
 - UI-based Human-in-the-Loop approval
-- Multi-agent graphs
-- Persistent long-term memory
 - Automated evaluations in LangSmith
 - API deployment
 
