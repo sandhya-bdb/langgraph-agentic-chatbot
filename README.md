@@ -188,6 +188,36 @@ Note: Local LangSmith tracing may fail due to network or DNS restrictions.
 
 ---
 
+
+## 🌐 API Usage (FastAPI)
+
+Start the API server:
+```
+uv sync
+uv pip install -e .
+uv run uvicorn langgraph_cb.api:app --host 0.0.0.0 --port 8000
+```
+
+Open docs:
+```
+http://localhost:8000/docs
+```
+
+### Chat
+```
+curl -X POST http://localhost:8000/chat   -H "Content-Type: application/json"   -d '{"message":"Buy 10 MSFT stocks at current price.","thread_id":"test-thread"}'
+```
+
+If approval is required, you will receive:
+```
+{"status":"approval_required","thread_id":"test-thread","approval_prompt":"REQUEST_BUY::MSFT::10::2003.0"}
+```
+
+### Approve
+```
+curl -X POST http://localhost:8000/approve   -H "Content-Type: application/json"   -d '{"thread_id":"test-thread","decision":"yes"}'
+```
+
 ## 🚀 Future Improvements
 
 - UI-based Human-in-the-Loop approval
