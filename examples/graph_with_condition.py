@@ -1,4 +1,4 @@
-# Auto-generated from graph_with_condition.ipynb.
+
 
 from typing import TypedDict, Literal
 
